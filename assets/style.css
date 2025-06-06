@@ -33,6 +33,13 @@ footer p {
     text-align: center;
     /*background-color: royalblue;*/
     height: 100%;
-   
 }
-
+.cartao__conteudo h3 {
+    background-color: rgb(120, 79, 173);
+    text-align: left;
+    padding: 0.5rem;
+    position: absolute;
+    margin: 0.6rem;
+    border-radius: 0.6rem;
+    font-size: 1vw;
+}
