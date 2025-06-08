@@ -5,18 +5,20 @@
 }
 
 body {
-    /*background-color: rgb(255, 255, 255);*/
     background: url('img/bg-desktop.webp');
     font-family: 'Open Sans', sans-serif;
 }
 
 #container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
 }
 
 .cartao {
     margin: 1rem 1rem;
-    background-color: rgb(37, 187, 179);
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
@@ -26,6 +28,8 @@ body {
     text-align: center;
     height: 100%;
     background-color: var(--card-front-color);
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
     
 }
 .cartao__conteudo h3 {
@@ -38,12 +42,46 @@ body {
     font-size: 1vw;
     color: var(--text-color);
     border: 1px solid var(--text-color);
+    backface-visibility: hidden;
 }
 
 .cartao__conteudo p {
     margin: 1rem;
+    margin-top: 1rem;
     padding: 2rem;
+    margin-top: 4rem
+
 }
+
+.cartao__conteudo__pergunta p {
+    color: var(--text-color);
+    font-weight: 500
+}
+
+.cartao__conteudo__resposta p {
+    color: var(--card-back-color);
+    font-weight: 700;
+}
+
+.cartao:hover .cartao__conteudo {
+    transform: rotateY(180deg);
+
+}
+
+.cartao__conteudo__pergunta,
+.cartao__conteudo__resposta {
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.cartao__conteudo__resposta {
+    transform: rotateY(180deg);
+}
+
+
+
 
 
 
