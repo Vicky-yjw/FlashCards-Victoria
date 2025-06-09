@@ -1,11 +1,12 @@
 :root {
     --text-color: #ffffff;
-    --card-front-color: #144480;
-    --card-back-color: #00F4BF;
+    --card-front-color: #8953bb;
+    --card-back-color: #8408d6;
 }
 
 body {
-    background-color: rgb(84, 4, 109);
+    background: url(../assets/img/backgrounds/raideneye.jpg) no-repeat center center fixed;
+    background-size: cover;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -33,7 +34,7 @@ body {
     
 }
 .cartao__conteudo h3 {
-    background-color: rgb(7, 238, 188);
+    background-color: rgba(124, 38, 182, 0.74);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
@@ -59,7 +60,7 @@ body {
 }
 
 .cartao__conteudo__resposta p {
-    color: var(--card-back-color);
+    color: white;
     font-weight: 700;
 }
 
@@ -86,7 +87,7 @@ body {
 
 
 footer {
-    background-color: rgb(45, 78, 122);
+    background-color: rgba(192, 122, 233, 0.822);
     color: rgb(255, 255, 255);
     position: fixed;
     bottom: 0;
