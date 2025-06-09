@@ -1,13 +1,13 @@
 criaCartao(
     'Curiosidades1',
-    pergunta,
-    resposta
+    pergunta = 'Quantos tipos de sangue existem?',
+    resposta = 'Existem quatro tipos de sangue: A, B, AB e O. Cada tipo pode ser positivo ou negativo, totalizando oito tipos de sangue diferentes.'
 )
 
 criaCartao(
     'Curiosidades2',
-    pergunta,
-    resposta
+    pergunta = 'Qual o maior animal terrestre?',
+    resposta = 'O maior animal terrestre é o elefante africano, que pode pesar até 6 toneladas e medir até 4 metros de altura.'
 )
 
 criaCartao(
